@@ -10,7 +10,7 @@ import com.example.android.marsphotos.network.MarsPhoto
 import com.example.android.marsphotos.overview.MarsApiStatus
 import com.example.android.marsphotos.overview.PhotoGridAdapter
 
-class BindingAdapters {
+
 
     @BindingAdapter("imageUrl") // imageUrl 속성이 있는 경우 이 결합 어댑터를 실행하도록 데이터 결합에 지시
     fun bindImage(imgView: ImageView, imgUrl: String?){
@@ -47,4 +47,3 @@ class BindingAdapters {
             }
         }
     }
-}
