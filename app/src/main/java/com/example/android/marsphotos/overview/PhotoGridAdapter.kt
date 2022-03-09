@@ -1,8 +1,6 @@
 package com.example.android.marsphotos.overview
 
 
-import android.os.Parcel
-import android.os.Parcelable
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.ListAdapter
@@ -15,10 +13,7 @@ class PhotoGridAdapter: ListAdapter<MarsPhoto,
         PhotoGridAdapter.MarsPhotoViewHolder>(DiffCallback){
 
 
-    override fun onCreateViewHolder(
-        parent: ViewGroup,
-        viewType: Int
-    ): PhotoGridAdapter.MarsPhotoViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PhotoGridAdapter.MarsPhotoViewHolder {
         return MarsPhotoViewHolder(GridViewItemBinding.inflate(
             LayoutInflater.from(parent.context)
         ))
